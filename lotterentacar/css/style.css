@@ -1,0 +1,2326 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: top;
+    width: 100%;
+    height: auto;
+}
+ul, li{ 
+    list-style: none;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #121212;
+}
+.hide{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: block;
+}
+#wrap{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+}
+.nav-pc, .utill, .footer, .kind, .pc-op, .pc-bannerlist, .pc-main3, .photo-btn, .main4 .pc-mbs, .main2-photo .prev, .main2-photo .next,
+.main5 .mo-bannerlist .e3, .main5 .mo-bannerlist .e-date3,  .main2-photo .pc-car-wrap{
+    display: none;
+}
+
+/* 모바일 헤더 */
+#header{
+    position: relative;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    background-color: #fff;
+    z-index: 101;
+}
+#header .logo{
+    margin: 10px 0 5px 2%;
+    width: 120px;
+    height: 35px;
+    background-image: url(../img/top-logo.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+#header .logo a{
+    display: block;
+    width: 150px;
+    height: 35px;
+    text-indent: -9999px;
+}
+#header .mypage{
+    position: absolute;
+    top: 13px;
+    right: 70px;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/user.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+#header .mypage a{
+    display: block;
+    width: 27px;
+    height: 27px;
+    text-indent: -9999px;
+}
+#header .menu{
+    position: absolute;
+    top: 13px;
+    right: 20px;    
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/open-menu.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+#header .menu a{
+    display: block;
+    width: 27px;
+    height: 27px;
+    text-indent: -9999px;
+}/* 모바일 헤더 마지막 */
+
+
+#container>div.on{
+    z-index: 100;
+}
+/*모바일 메인1 시작*/
+#main1{
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.video{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.main12 video{
+    height: 87vh;
+    position: absolute;
+    left: 50%;
+    margin-left: -558px;
+}
+.video .main-text{
+    position: absolute;
+    top: 35vh;
+    left: 4%;
+    right: 4%;
+    text-align: center;
+}
+.main-text .main-t1{
+    font-size: 1.3em;
+    color: #fff;
+    margin-bottom: 10px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: 0.5s;
+}
+.main-text .main-t2{
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #ed1c24;
+    margin-bottom: 10px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: 0.7s;
+}
+.main-text .main-t3{
+    font-size: 1em;
+    color: #fff;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: 1s;
+}
+.main-text .visible{
+    transform: translateY(0);
+    opacity: 1;
+}
+.video .bar{
+    position: absolute;
+    bottom: 103px;
+    z-index: 1;
+    width: 0;
+    height: 5px;
+    background-color: #fff;
+    opacity: 50%;
+    animation: bar 19s 3 linear;
+}
+@keyframes bar{
+    0%{
+      width: 0}
+    100%{
+      width: 100%}
+}
+
+/* 모바일 메인1 끝*/
+
+/* 모바일 메인2 시작*/
+.main2{
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 49px;
+    padding-top: 55px;
+    box-sizing: border-box;
+    position: relative;
+    overflow-y: scroll;
+    background-color: #fff;
+    z-index: 2;
+}
+.main2-in{
+    height: 100%;
+    position: relative;
+}
+.main2 .main2-t-btn{
+    background-color: #e4e4e4;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    line-height: 30px;
+    border-radius: 30px;
+    font-size: 14px;
+    display: flex;
+}
+.main2-t-btn span{
+    display: block;
+    text-align: center;
+}
+.main2-t-btn .ddang{
+    border-radius: 30px;
+    font-weight: 500;
+    width: 55%;
+}
+.main2-t-btn .on{
+    background-color: #ed1c24;
+    border-radius: 30px;
+    color: #fff;
+    width: 55%;
+}
+.main2-t-btn .jeju{
+    font-weight: 500;
+    width: 45%;
+    padding-right: 5%;
+}
+.main2-c-btn{
+    position: relative;
+    padding: 0 20px;
+    box-sizing: border-box;
+    height: 45%;
+}
+.main2-c-btn .time{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.main2-c-btn .time dl{
+    width: 48%;
+}
+.main2-c-btn .place dl{
+    width: 48%;
+}
+.main2-c-btn .time dt{
+    color: #5f5f5f;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.main2-c-btn .time dt:before{
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/time.png);
+    background-size: 100% auto;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+.main2-c-btn .time dd{
+    border: 1px solid #c9c9c9;
+    width: 100%;
+    border-radius: 30px;
+}
+.main2-c-btn .time dd a{
+    color: #121212;
+    font-size: 1em;
+    line-height: 30px;
+}
+.main2-c-btn .place{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.main2-c-btn .place dt{
+    color: #5f5f5f;
+    margin-bottom: 5px;
+}
+.main2-c-btn .place dt:before{
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    width: 17px;
+    height: 17px;
+    background-image: url(../img/place.png);
+    background-size: 100% auto;
+    margin-top: 2px;
+    margin-right: 3px;
+}
+.main2-c-btn .place dd{
+    border: 1px solid #c9c9c9;
+    width: 100%;
+    border-radius: 30px;
+}
+.main2-c-btn .place dd a{
+    color: #121212;
+    font-size: 1em;
+    line-height: 30px;
+    cursor: default;
+}
+.main2 .arrow{
+    width: 25px;
+    margin: 0 auto;
+    transform: scaleY(0.75);
+}
+.main2 .main2-arrow{
+    width: 25px;
+    height: 25px;
+    border-right: 2px solid #c9c9c9;
+    border-top: 2px solid #c9c9c9;
+    text-indent: -9999px;
+    transform: rotate(135deg);
+}
+.main2 .main2-arrow2{
+    margin-top: -20px;
+    width: 25px;
+    height: 25px;
+    border-right: 2px solid #c9c9c9;
+    border-top: 2px solid #c9c9c9;
+    text-indent: -9999px;
+    transform: rotate(135deg);
+}
+.main2-photo{
+    width: 100%;
+    height: 55%;
+    background-color: #f3f3f3;
+    padding: 30px 0 60px 0;
+}
+.main2-photo h2{
+    padding: 15px 0 15px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+.main2-photo ul{
+    display: flex;
+}
+.main2-photo .mo-car-list .car-info{
+    width: 100%;
+}
+.main2-photo .mo-car-list .car-info a{
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+}
+.main2-photo .mo-car-list .car-info .name{
+    font-size: 1.1em;
+    font-weight: 450;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.main2-photo .mo-car-list .car-info .name span{
+    font-size: 14px;
+}
+.main2-photo .btn{
+    width: 40%;
+    height: 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+.main2-photo .btn a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #ed1c24;
+    border-radius: 30px;
+    font-size: 1.5em;
+    line-height: 40px;
+    font-weight: 700;
+    color: #fff;
+}
+/* 메인2 마지막*/
+
+/* 메인3 시작*/
+.main3{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #e7e7e7;
+    padding-bottom: 60px;
+    padding-top: 55px;
+    box-sizing: border-box;
+    z-index: 2;
+    overflow-y: scroll;
+}
+.mo-main3{
+    width: 100%;
+}
+.mo-main3 .best{
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 20px 0 20px 0;
+}
+.best .mo-listin{
+    width: 100%;
+}
+.best h2{
+    margin-left: 5%;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.best .best-slide{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.best .best-slide a{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    height: auto;
+}
+.best .best-slide a img{
+    max-width: 100%;
+    max-height: auto;
+}
+.best-name{
+    margin-top: 20px;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+.best-price{
+    color: #ed1c24;
+    font-size: 1.2em;
+}
+.best-price span{
+    font-size: 0.9em;
+    margin: 0 2%;
+}
+.best-price .won{
+    font-size: 0.8em;    
+}
+.main3 .hot{
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 0 0 20px 0;
+}
+.hot .mo-listin{
+    width: 100%;
+}
+.hot h2{
+    padding-top: 20px;
+    margin-left: 5%;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.hot .best-slide{
+    width: 100%;
+    text-align: center;
+}
+.hot .best-slide a{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    height: auto;
+}
+.hot .best-slide a img{
+    max-width: 200px;
+    max-height: 100px;
+}
+.hot-name{
+    margin-top: 15px;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+.hot-price{
+    color: #ed1c24;
+    font-size: 1.1em;
+}
+.hot-price span{
+    font-size: 0.9em;
+    margin: 0 2%;
+}
+.hot-price .won{
+    font-size: 0.8em;    
+}
+.main3 .recommend{
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+}
+.recommend .mo-listin{
+    width: 100%;
+}
+.recommend h2{
+    padding-top: 20px;
+    margin-left: 5%;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.recommend .best-slide{
+    text-align: center;
+}
+.recommend .best-slide a{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    height: auto;
+}
+.recommend .best-slide a img{
+    max-width: 200px;
+    max-height: 100px;
+}
+.rm-name{
+    margin-top: 15px;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+.rm-price{
+    color: #ed1c24;
+    font-size: 1.1em;
+}
+.rm-price span{
+    font-size: 0.9em;
+    margin: 0 2%;
+}
+.rm-price .won{
+    font-size: 0.8em;    
+}
+.main3 .best-more{
+    padding: 30px 0;
+    text-align: center;
+}
+.main3 .best-more a{
+    font-size: 1em;
+    line-height: 2em;
+    color: #fff;
+    padding: 5px 15px;
+    background-color: #ed1c24;
+    border-radius: 30px;
+}
+/*메인3 마지막*/
+
+/*메인4 시작*/
+.main4{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 49px;
+    padding-top: 55px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.main4-in{
+    position: relative;
+    height: 100%;
+}
+.main4 .mo-mbs h2{
+    box-sizing: border-box;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.main4 .mo-mbs ul{
+    position: absolute;
+    top: 50px;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    padding: 0 11px;    
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main4 .mo-mbs li{
+    position: relative;
+    width: 50%;
+    height: 50%;
+    padding: 4px;
+    box-sizing: border-box;
+}
+.main4 .mo-mbs li a{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.main4 .mo-mbs li:nth-child(1) a{
+    background-image: url(../img/membership01.jpg);
+}
+.main4 .mo-mbs li:nth-child(2) a{
+    background-image: url(../img/membership02.jpg);
+}
+.main4 .mo-mbs li:nth-child(3) a{
+    background-image: url(../img/membership03.jpg);
+}
+.main4 .mo-mbs li:nth-child(4) a{
+    background-image: url(../img/membership04.jpg);
+}
+.main4 .mo-mbs li a img{
+    width: 100%;
+    height: auto;
+}
+.main4 .mo-mbs li a .name{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 1.4em;
+    font-weight: 500;
+    line-height: 1.3em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0,0,0, 0.3);
+}
+#btn{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 102;
+}
+#btn ul{
+    display: flex;
+}
+#btn li{
+    width: 25%;
+    height: 48px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+#btn li:hover{
+    background-color: #7b7b7d;
+    border-right: 1px solid #ccc;
+}
+#btn .f4:hover{
+    border-left: 1px solid #ccc;
+}
+#btn li:hover a{
+    color: #fff;
+}
+#btn li:last-child{
+    border-right: 0;
+}
+#btn li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #121212;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -1px;
+}
+#btn li br{
+    display: none;
+}
+/* 메인4 마지막*/
+
+/* 메인5 시작*/
+.main5{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    overflow-y: scroll;
+    padding-top: 55px;
+    padding-bottom: 49px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.main5-in{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.main5 .mo-bannerlist{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+ }
+.main5 .mo-bannerlist h2{
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.main5 .mo-bannerlist ul{
+    padding: 0 5%;
+}
+.main5 .mo-bannerlist li{
+    width: 290px;
+    height: 160px;
+    margin: 0 auto;
+}
+.main5 .mo-bannerlist li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top;
+}
+.main5 .mo-bannerlist .e1 a{
+    background-image: url(../img/benner01.jpg);
+}
+.main5 .mo-bannerlist .e2 a{
+    background-image: url(../img/benner02.jpg);
+}
+.main5 .mo-bannerlist .e3 a{
+    background-image: url(../img/pc-benner03.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+.main5 .mo-bannerlist li img{
+    max-width: 500px;
+    max-height: 300px;
+}
+.main5 .mo-bannerlist li:after{
+    content: "";
+    display: block;
+    background-color: #c9c9c9;
+    width: 100%;
+    height: 1px;
+}
+.main5 .mo-bannerlist .e-date{
+    width: 290px;
+    font-size: 13px;
+    margin-bottom: 30px;
+    color: #777;
+    margin: 0 auto;
+}
+.main5 .more{
+    text-align: center;
+}
+.main5 .more a{
+    font-size: 0.9em;
+    line-height: 3em;
+    font-weight: 300;
+    color: #fff;
+    padding: 5px 15px;
+    background-color: #ed1c24;
+    border-radius: 30px;
+}
+    .date{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        position: fixed;
+        top:0;
+        left:0;
+        z-index: 110;
+        display: flex;
+        align-items: center;
+        display: none;
+    }
+    .inner{
+        width: 100%;
+        height: 100%;
+    }
+    .datein{
+        width: 90%;
+        height: 100%;
+        background-color: #fff;
+        margin: 5% auto;
+        overflow-y: scroll;
+    }
+    .layer-title{
+        width: 100%;
+        height: 40px;
+        background-color: #fff;
+        text-align: center;
+        position: relative;
+        line-height: 35px;
+    }
+    .layer-title h2{
+        font-size: 16px;
+    }
+    .layer-title .close{
+        position: absolute;
+        top : 10px;
+        right: 15px;
+    }
+    .layer-title .close a{
+        display: block;
+        width: 17px;
+        height: 17px;
+        background-image: url(../img/btn_close.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% auto;
+        text-indent: -9999px;
+    }
+    .layer{
+        width: 100%;
+    }
+    .left-layer{
+        width: 100%;
+        height: 500px;
+    }
+    .left-layer h2{
+        text-align: center;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .left-layer .calendar{
+        width: 100%;
+        height: 380px;
+    }
+    .left-layer .time{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-layer .time select{
+        padding: 2px 10px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .left-layer .last-check{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .left-layer .last-check .check-date{
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        margin-right: 10px;
+    }
+    .left-layer .last-check .check-time{
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+    }
+    /**/
+    .lay-arrow{
+        width: 100%;
+        height: 5%;
+    }
+    .right-layer{
+        width: 100%;
+        height: 500px;
+    }
+    .right-layer h2{
+        text-align: center;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .right-layer .calendar1{
+        width: 100%;
+        height: 380px;
+    }
+    .right-layer .time{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .right-layer .time select{
+        padding: 2px 10px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .right-layer .last-check{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .right-layer .last-check .check-date{
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center; 
+        margin-right: 10px;
+    }
+    .right-layer .last-check .check-time{
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center; 
+    }
+    .layer-check{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .layer-check .ok{
+        width: 200px;
+        height: 35px;
+        background-color: #ed1c24;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .layer-check .ok a{
+        display: block;
+        width: 200px;
+        height: 35px;
+        font-size: 20px;
+        line-height: 35px;
+        color: #fff;
+    }
+    /*LEFT  calendar*/
+    .scriptCalendar a{
+        color:#000000;
+    }
+    .scriptCalendar{
+        text-align:center; 
+        z-index: 120;
+        margin: 0 auto;
+    }
+    .scriptCalendar>thead>tr>td{
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+    }
+    .scriptCalendar>thead>tr:first-child>td{
+        font-weight:bold;
+    }
+    .scriptCalendar>thead>tr:last-child>td{
+        background-color:#90ee90;
+    }
+    .scriptCalendar>tbody>tr>td{
+        width: 45px;
+        height: 45px;
+    }
+    
+    /*right calendar*/
+    
+    .scriptCalendar1 a{
+        color:#000000;
+    }
+    .scriptCalendar1{
+        text-align:center; 
+        z-index: 120;
+        margin: 0 auto;
+    }
+    .scriptCalendar1>thead>tr>td{
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+    }
+    .scriptCalendar1>thead>tr:first-child>td{
+        font-weight:bold;
+    }
+    .scriptCalendar1>thead>tr:last-child>td{
+        background-color:#90ee90;
+    }
+    .scriptCalendar1>tbody>tr>td{
+        width: 45px;
+        height: 45px;
+    }
+
+
+
+
+@media screen and (min-width:768px){
+    .main3 .mo-main3, .pc-bannerlist, .mo-title, .main4 .mo-mbs, .main4 .pc-mbs .pc-mbs-photo .ov, .mo-car-wrap{
+        display: none;
+    }
+    .nav-pc, .kind, .pc-op, .main2-photo .prev, .main2-photo .next, .pc-main3, .main4 .mo-mbs, .mo-bannerlist, .main5 .more, .main2-photo .pc-car-wrap{
+        display: block;
+    }
+    .video video{
+        height: 92vh;
+        position: absolute;
+        left: 50%;
+        margin-left: -563px;
+    }
+    #header .nav-pc{
+        margin-left: 12%;
+        width:50%;
+    }
+    #header .nav-pc ul{
+        height: 55px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #header .nav-pc li a{
+        font-size: 14px;
+        color: #121212;
+        font-weight: 500;
+    }
+    #header .nav-pc li a:hover{
+        color: #fff;
+    }
+    .main-text .main-t1{
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    .main-text .main-t2{
+        font-size: 40px;
+        line-height: 45px;
+        margin-bottom: 10px;
+    }
+    .main-text .main-t3{
+        font-size: 25px;
+        line-height: 30px;   
+    }
+    .main2{
+        height: 100%;
+        display: flex;
+        padding-bottom: 49px;  
+        overflow-x: hidden;
+    }
+    .main2-in{
+        width: 100%;
+        padding: 0;
+        display: flex;
+    }
+    .main2 .main2-t-btn{
+        width: 150px;
+        line-height: 35px;
+        border-radius: 0;
+        font-size: 18px;
+        margin: 0 auto 30px auto;
+    }
+    .main2-t-btn span{
+        display: block;
+        text-align: center;
+    }
+    .main2-t-btn .on{
+        border-radius: 0;
+        width: 55%;
+}
+    .main2-t-btn .ddang{
+        width: 100px;
+        border-radius: 0;
+    }
+    .main2-t-btn .jeju{
+        width: 100px;
+        padding-right: 0;
+    }
+    .main2 .main2-c-btn{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50%;
+        padding: 0 4% 0 0;
+    }
+    .main2-c-btn .time{
+        margin-bottom: 10%;
+        justify-content: space-around;
+    }
+    .main2-c-btn .time dl{
+        width: auto;
+    }
+    .main2-c-btn .time dt{
+        font-size: 18px;
+        margin-bottom: 10%;
+    }
+    .main2-c-btn .time dt:before{
+        width: 25px;
+        height: 25px;
+        margin-top: -1px;
+        margin-right: 10px;
+    }
+    .main2-c-btn .time dd{
+        padding: 2px 5px;
+    }
+    .main2-c-btn .time dd a{
+        padding: 2px 5px;
+        font-size: 18px;    
+        letter-spacing: -1px;    
+    }
+    .main2-c-btn .place{
+        justify-content: space-around;
+    }
+    .main2-c-btn .place dl{
+        width: auto;
+    }
+    .main2-c-btn .place dt{
+        font-size: 18px;
+        margin-bottom: 10%;
+    }
+    .main2-c-btn .place dt:before{
+        width: 25px;
+        height: 25px;
+        margin-top: -1px;
+        margin-right: 10px;
+    }
+    .main2-c-btn .place dd{
+        padding: 2px 5px;
+    }
+    .main2-c-btn .place dd a{
+        padding: 2px 5px;
+        font-size: 18px;
+        letter-spacing: -1px;
+    }
+    .main2-c-btn .kind{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .main2-c-btn .kind h2{
+        color: #5f5f5f;
+        font-weight: 300;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .main2-c-btn .kind ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .main2-c-btn .kind li{
+        width: 33.33%;
+        height: 40px;
+        margin-bottom: 10px;
+        font-size: 1.3em;
+        line-height: 40px;
+        color: #121212;
+        cursor: pointer;
+    }
+    .main2-c-btn .kind .ka{
+        font-weight: 500;
+        color: #ed1c24; 
+    }
+    .main2-c-btn .kind .ka:after{
+        content: "";
+        display: none;
+        margin: 0 auto;
+        width: 60px;
+        height: 3px;
+        background-color: #ed1c24;
+    }
+    .main2-c-btn .kind .ka:after{
+        display: block;
+    }
+    .main2 .arrow{
+        position: relative;
+        width: 60px;
+        margin-bottom: 5%;
+        margin-left: 95%;
+        display: flex;
+    }
+    .main2 .main2-arrow{
+        position: absolute;
+        top: 0;
+        right: 20px;
+        width: 30px;
+        height: 30px;
+        transform: rotate(40deg);
+    }
+    .main2 .main2-arrow2{
+        width: 30px;
+        height: 30px;
+        transform: rotate(40deg);
+        margin-top: 0;
+    }
+    .main2-photo{
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .main2-photoin{
+       position: absolute;
+        top: 45%;
+        transform: translateY(-50%);
+        width: 100%;
+        height: auto;
+    }
+    .main2-photo .car-list{
+        display: none;
+    }
+    .main2-photo .pc-car-wrap .front{
+        display: block;
+    }
+    .main2-photo .slick-prev{
+        position: absolute;
+        top: 25vh;
+        left: 5vw;
+        display: block;
+        width: 30px;
+        height: 30px;
+        text-indent: -9999px;
+        border-right: 3px solid #c9c9c9;
+        border-top: 3px solid #c9c9c9;
+        border-left: 0;
+        border-bottom: 0;
+        transform: rotate(-140deg);
+        z-index: 1;
+        background-color: transparent;
+    }
+    .main2-photo .slick-next{
+        position: absolute;
+        top: 25vh;
+        right: 5vw;
+        display: block;
+        width: 30px;
+        height: 30px;
+        text-indent: -9999px;
+        border-right: 3px solid #c9c9c9;
+        border-top: 3px solid #c9c9c9;
+        border-left: 0;
+        border-bottom: 0;
+        transform: rotate(45deg);
+        z-index: 1;
+        background-color: transparent;
+    }
+    .main2-photo .pc-op{
+        width: auto;
+        margin: 0 auto 10% auto;
+    }
+    .main2-photo .pc-op h2{
+        font-size: 20px;
+    }
+    .main2-photo .pc-op ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main2-photo .pc-op li{
+        width: 33.33%;
+        line-height: 40px;
+        color: #5f5f5f;
+        font-size: 18px;
+        text-align: center;
+    }
+    .main2-photo .pc-car-wrap .car-info{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .main2-photo .pc-car-wrap .car-info a{
+        display: block;
+        padding: 10px 0 50px;
+    }
+    .main2-photo .pc-car-wrap .car-info .name{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .main2-photo .pc-car-wrap .car-info .name span{
+        font-size: 20px;
+    }
+    .main2-photo .btn{
+        width: 35%;
+        height: 40px;
+    }
+    .main2-photo .btn a{
+        border-radius: 0;
+        font-size: 20px;
+    }
+    /* 메인3*/
+    .main3{
+        overflow: hidden;
+        background-image: url(../img/pc-main03-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        padding-bottom: 0;
+        padding-top: 0;
+        background-size: cover;
+    }
+    .pc-main3{
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+        position: relative;
+        
+    }
+    .pc-main3 .bgop{
+        position: absolute;
+        top:90px;
+        left:0;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        opacity: 20%;
+    }
+    .pc-main3 .pc-list-wrap{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 45%;
+        transform: translateY(-50%);
+    }
+    .pc-main3 .info{
+        width: 100vw;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        z-index: 10;
+    }
+    .pc-main3 .pc-list{
+        display: none;
+    }
+    .pc-main3 .view{
+        display: block;
+    }
+    .pc-main3 .slide-in{
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .pc-main3 .info .car-name{
+        color: #121212;
+        font-size: 28px;
+        line-height: 40px;
+        font-weight: 700;
+        padding-top: 60px;
+    }
+    .pc-main3 .info .pc-price{
+        color: #ed1c24;
+        font-size: 23px;
+        line-height: 40px;
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+    .pc-main3 .info .pc-price span{
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    .pc-main3 .info a{
+        display: block;
+        margin: 0 auto;
+        width: 120px;
+        background-color: #ed1c24;
+        border-radius: 0;
+        font-size: 16px;
+        line-height: 35px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 50px;
+    }
+    .main3 .slick-prev{
+        position: absolute;
+        top: 46%;
+        transform: translateY(-50%);
+        left: 12%;
+        width: 50px;
+        height: 50px;
+        text-indent: -9999px;
+        border-right: 3px solid #c9c9c9;
+        border-top: 3px solid #c9c9c9;
+        transform: rotate(-140deg);
+        cursor: pointer;
+        background-color: transparent;
+        border-left : none;
+        border-bottom : none;
+        z-index: 1000;
+        background-color: transparent;
+    } 
+    .main3 .slick-next{
+        position: absolute;
+        top: 46%;
+        transform: translateY(-50%);
+        right: 12%;
+        width: 50px;
+        height: 50px;
+        text-indent: -9999px;
+        border-right: 3px solid #c9c9c9;
+        border-top: 3px solid #c9c9c9;
+        transform: rotate(45deg);
+        cursor: pointer;
+        background-color: transparent;
+        border-left : none;
+        border-bottom : none;
+        background-color: transparent;
+    }
+    .pc-main3 .photo{
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    .pc-main3 .title{
+        position: absolute;
+        width: 50%;
+        bottom: 30%;
+        left:25%;
+        right: 25%;
+        z-index: 200;
+    }
+    .pc-main3 .title ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .pc-main3 .title li{
+        color : #121212;
+        font-weight: 500;
+        font-size: 1.5em;
+        background-color: transparent;
+    }
+    .pc-main3 .title .point{
+        color: #fff;
+        font-size: 22px;
+    }
+    /*메인4 시작*/   
+
+/*메인5시작*/
+    .main5 .mo-bannerlist h2{
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .main5 .mo-bannerlist ul{
+        padding: 0 10%;
+    }
+    .main5 .mo-bannerlist li{
+        width: 100%;
+        height: 30vh;
+    }
+    .main5 .mo-bannerlist li:after{
+        margin-top: 5px;
+        height: 4px;
+    }
+    .main5 .mo-bannerlist .e-date{
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .main5 .more a{
+        font-size: 22px;
+    }
+    .inner{
+        position: relative;
+    }
+    .datein{
+        height: 680px;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        margin-left: -45%;
+        transform: translateY(-55%);
+        overflow-y: hidden;
+    }
+    .layer-title{
+        height: 50px;
+        line-height: 50px;
+    }
+    .layer-title h2{
+        font-size: 18px;
+    }
+    .layer-title .close{
+        position: absolute;
+        top : 15px;
+        right: 15px;
+    }
+    .layer-title .close a{
+        width: 25px;
+        height: 25px;
+    }
+    .layer{
+        display: flex;
+        justify-content: center;
+    }
+    .left-layer{
+        width: 45%;
+        height: 500px;
+    }
+    .left-layer h2{
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .left-layer .calendar{
+        height: 450px;
+    }
+    .left-layer .time{
+        height: 50px;
+    }
+    .left-layer .time select{
+        padding: 2px 15px;
+        font-size: 18px;
+    }
+    .left-layer .last-check{
+        height: 30px;
+    }
+    .left-layer .last-check .check-date{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .left-layer .last-check .check-time{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    /**/
+    .lay-arrow{
+        width: 10%;
+        height: 100%;
+    }
+    .right-layer{
+        width: 45%;
+        height: 570px;
+    }
+    .right-layer h2{
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .right-layer .calendar1{
+        width: 100%;
+        height: 450px;
+    }
+    .right-layer .time{
+        height: 50px;
+    }
+    .right-layer .time select{
+        padding: 2px 15px;
+        font-size: 18px;
+    }
+    .right-layer .last-check{
+        width: 100%;
+        height: 30px;
+    }
+    .right-layer .last-check .check-date{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .right-layer .last-check .check-time{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .layer-check{
+        height: 40px;
+        margin-bottom: 50px;
+    }
+    .layer-check .ok{
+        width: 200px;
+        height: 40px;
+    }
+    .layer-check .ok a{
+        height: 40px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    /*LEFT  calendar*/
+    
+    .scriptCalendar>thead>tr>td{
+        width: 55px;
+        height: 55px;
+    }
+    .scriptCalendar>tbody>tr>td{
+        width: 55px;
+        height: 55px;
+    }
+    /*right calendar*/
+    
+    .scriptCalendar1>thead>tr>td{
+        width: 55px;
+        height: 55px;
+    }
+    .scriptCalendar1>tbody>tr>td{
+        width: 55px;
+        height: 55px;
+    }
+}
+    /* 태블릿 마지막*/
+
+@media screen and (min-width:1220px){
+    
+    #header .mypage, .main3 .mo-main3, .mo-bannerlist, .mo-title, .main4 .mo-mbs{
+        display: none;
+    }
+    .nav-pc, .utill, .footer, .kind, .pc-op, .pc-bannerlist, .pc-main3, .photo-btn, .main4 .pc-mbs, .main2-photo .prev, .main2-photo .next, .main4 .pc-mbs .pc-mbs-photo .ov{
+        display: block;
+    }
+    
+    /* 메인1 시작*/
+    .video{
+        padding-right: 120px;
+        padding-bottom: 0;
+    }
+    .video video{
+        height: 122vh;
+        left: 50%;
+        margin-left: -955px;
+    }
+    #header{
+        position: fixed;
+        width: 100vw;
+        height: 90px;
+        display: flex;
+        background-color:  rgba(255,255,255, 0.2);
+    }
+    #header .logo{
+        margin: 26px 40px 0 30px;
+    }
+    #header .nav-pc{
+        width: 50%;
+        margin-left: 0;
+    }
+    #header .nav-pc ul{
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #header .nav-pc li a{
+        font-size: 20px;
+        color: #121212;
+        font-weight: 500;
+    }
+    #header .nav-pc li a:hover{
+        color: #fff;
+    }
+    .utill{
+        position: absolute;
+        right: 240px;
+        width: 10%;
+    }
+    .utill ul{
+        height: 90px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .utill li a{
+        font-size: 16px;
+        color: #121212;
+    }
+    .utill li a:hover{
+        color: #fff;
+    }
+    #header .menu{
+        width: 40px;
+        height: 40px;
+        margin-top: 15px;
+        margin-right: 150px;
+    }
+    #header .menu:hover{
+        background-image: url(../img/open-menu-hover.png);
+    }
+    #header .menu a{
+        width: 50px;
+        height: 50px;  
+    }
+    .video .main-text{
+        top: 45vh;
+    }
+    .main-text .main-t1{
+        font-size: 30px;
+    }
+    .main-text .main-t2{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .main-text .main-t3{
+        font-size: 35px;
+        line-height: 40px;   
+    }
+    /**/
+    #header:hover{
+        background-color: #7b7b7d;
+    }
+    .video .bar{
+        width: 100%;
+        height: 12px;
+        bottom: 0;
+    }
+    /* 메인1 마지막*/
+    
+    /* 푸터 시작 */
+    .footer{
+        padding: 0 50px;
+        box-sizing: border-box;
+        position: relative;
+        height: 300px;
+        color: #7a7a7a;
+        font-size: 15px;
+        background-color: #e9e9e9;
+    }
+    .f-btn{
+        padding-top: 30px;
+        margin-bottom: 20px;
+    }
+    .f-btn ul{
+        display: flex;
+    }
+    .f-btn li:after{
+        content: "";
+        display: inline-block;
+        vertical-align: top;
+        width: 2px;
+        height: 13px;
+        background-color: #7a7a7a;
+        margin: 4px 10px 0 10px;
+    }
+    .f-btn li:last-child:after{
+        display: none;
+    }
+    .f-btn li a{
+        color: #7a7a7a;
+    }
+    .f-info{
+        margin-bottom: 30px;
+        line-height: 25px;
+        font-size: 14px;
+    }
+    .f-mark ul{
+        display: flex;
+    }
+    .f-mark li{
+        width: 50px;
+        height: 40px;
+        margin-right: 10px;
+    }
+    .f-sns{
+        position: absolute;
+        bottom: 62px;
+        right: 130px;
+    }
+    .f-sns ul{
+        display: flex;
+    }
+    .f-sns ul li{
+        width: 40px;
+        height: 30px;
+        margin-left: 10px;
+    }
+    /* 푸터 마지막 */
+     
+    /* 버튼 시작*/
+    #btn{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 120px;
+        height: 100vh;
+        margin-top: 90px;
+        background-color: #fff;
+    }
+    #btn ul{
+        display: block;   
+    }
+    #btn li{
+        position: relative;
+        width: 100%;
+        height: 25vh;
+        border-top: 0;
+    }
+    #btn li:hover{
+        background-color: black;
+        border-right: 0;
+    }
+    #btn .op{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 25vh;
+    }
+    #btn li a{
+        position: absolute;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    #btn .btn-1{
+        background-image: url(../img/carhead.JPG);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    #btn p{
+        background-color: #e9e9e9;
+        opacity: 85%;
+    }
+    #btn li:hover p{
+        opacity: 0;
+    }
+    #btn .btn-2{
+        background-image: url(../img/carhead2.JPG);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    #btn .btn-3{
+        background-image: url(../img/mebbg1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    #btn .btn-4{
+        background-image: url(../img/eventbg.JPG);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    /* 버튼 마지막*/
+    
+    /* 메인2 시작*/
+    .main2{
+        position: relative;
+        width: 100%;
+        padding: 0 120px 0 0;
+        overflow-y: hidden;
+    }
+    .main2 .main2-c-btn{
+        width: 40%;
+        padding-top: 50px;
+        box-sizing: border-box;
+        transform: translateY(-90%);
+    }
+    .main2-c-btn .time{
+        margin-bottom: 30px;
+    }
+    .main2-c-btn .time dt:before{
+        width: 25px;
+        height: 25px;
+        margin-top: -1px;
+        margin-right: 10px;
+    }
+    .main2-c-btn .time dd{
+        font-size: 22px;
+        text-align: center;
+        padding: 4px 7px;
+    }
+    .main2-c-btn .place dd{
+        font-size: 22px;
+        padding: 4px 7px;
+    }
+    .main2-c-btn .kind{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .main2-c-btn .kind h2{
+        color: #5f5f5f;
+        font-weight: 300;
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+    .main2-c-btn .kind ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .main2-c-btn .kind li{
+        width: 33.33%;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+    .main2-c-btn .kind li a{
+        font-size: 18px;
+        color: #121212;
+    }
+    .main2-c-btn .kind li .ka{
+        font-weight: 500;
+        color: #ed1c24;
+    }
+    .main2-c-btn .kind li a:after{
+        content: "";
+        display: none;
+        margin: 0 auto;
+        width: 60px;
+        height: 3px;
+        background-color: #ed1c24;
+    }
+    .main2-c-btn .kind li a:hover:after{
+        display: block;
+    }
+    .main2 .main2-arrow{
+        width: 50px;
+        height: 50px;
+    }
+    .main2 .main2-arrow2{
+        width: 50px;
+        height: 50px;
+    }
+    .main2-photo{
+        width: 60%;
+    }
+    .main2-photo .pc-op{
+        width: 400px;
+        margin: 140px auto 80px auto;
+    }
+    .main2-photo .pc-op h2{
+        font-size: 20px;
+    }
+    .main2-photo .pc-op ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main2-photo .pc-op li{
+        width: 33.33%;
+        line-height: 40px;
+        color: #5f5f5f;
+        font-size: 16px;
+        text-align: center;
+    }
+    .main2-photo .pc-car-wrap .car-info{
+        width: 50%;
+        padding: 0 15px;
+        margin: 0 auto; 
+    }
+    .main2-photo .pc-car-wrap .car-info a{
+        display: block;
+        padding: 10px 0 60px;
+    }
+    .main2-photo .pc-car-wrap .car-info .name{
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .main2-photo .pc-car-wrap .car-info .name span{
+        font-size: 20px;
+    }
+    .main2-photo .btn{
+        width: 23%;
+        height: 50px;
+    }
+    .main2-photo .btn a{
+        font-size: 25px;
+        line-height: 50px;
+        font-weight: 700;
+    }
+    .main2-photo .slick-prev{
+        top: 55vh;
+        left: 9vw;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .main2-photo .slick-next{
+        top: 55vh;
+        right: 10vw;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .main2 .main2-t-btn{
+        width: 200px;
+        line-height: 40px;
+    }
+    .main2-t-btn span{
+        cursor: pointer;
+    }
+    
+    /*메인3 시작*/
+    .main3{
+        padding-right: 120px;
+    }
+    .pc-main3{
+        width: 100%;
+        height: 100%;
+        padding-top: 100px;
+        padding-bottom: 0;
+        position: relative;
+    }
+    .pc-main3 .bgop{
+        top:0;
+    }
+    .pc-main3 .info{
+        padding-top: 0;
+    }
+    .pc-main3 .slide-in{
+        width: 550px;
+        margin: 0 auto;
+    }
+    .pc-main3 .info .car-name{
+        padding-top: 0;
+        color: #121212;
+        font-size: 40px;
+        line-height: 70px;
+        font-weight: 700;
+    }
+    .pc-main3 .info .pc-price{
+        color: #ed1c24;
+        font-size: 35px;
+        line-height: 60px;
+        font-weight: 500;
+    }
+    .pc-main3 .info .pc-price span{
+        font-size: 25px;
+        margin-right: 10px;
+    }
+    .pc-main3 .info a{
+        display: block;
+        margin: 0 auto;
+        width: 150px;
+        background-color: #ed1c24;
+        border-radius: 0;
+        font-size: 20px;
+        line-height: 50px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 50px;
+    }
+    .main3 .slick-prev{
+        top: 40%;
+        left: 22%;
+        width: 100px;
+        height: 100px;
+    } 
+    .main3 .slick-next{
+        top: 40%;
+        right: 22%;
+        width: 100px;
+        height: 100px;
+    }
+    .pc-main3 .photo{
+        margin: 0 auto 50px auto;
+        width: 85%;
+    }
+    .pc-main3 .title{
+        bottom: 25%;
+    }
+    .pc-main3 .title li{
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .pc-main3 .title .point{
+        font-size: 30px;
+    }
+    .main4{
+        padding-right: 120px;
+        padding-bottom: 0;
+        overflow-y: hidden;
+        padding-top: 0;
+    }
+    .main4-in{
+        padding-top: 90px;
+    }
+    .main4 .pc-mbs h2{
+        margin-top: 10px;
+        margin-left: 0;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .main4 .pc-mbs{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-right: 120px;
+        padding-bottom: 0;
+    }
+    .main4 .pc-mbs .pc-mbs-list{
+        position: absolute;
+        top: 60px;
+        bottom: 190px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    .main4 .pc-mbs .pc-mbs-photo{
+        position: relative;
+        width: 22%;
+        margin-bottom: 0;
+    }
+    .main4 .pc-mbs .pc-mbs-photo .or{
+        position: relative;
+        display: block;
+    }
+    .main4 .pc-mbs .pc-mbs-photo .or{
+        transform: rotateY(0deg);
+        transition: transform .7s;
+    }
+    .main4 .pc-mbs .pc-mbs-photo .ov{
+        transform: rotateY(90deg);
+        transition: transform .6s;
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background-color: #f3f3f3;
+        box-sizing: border-box;
+        padding-top: 20px;
+    }
+    .main4 .pc-mbs .pc-mbs-photo:hover .or{
+        transform: rotateY(90deg);
+    }
+    .main4 .pc-mbs .pc-mbs-photo:hover .ov{
+        transform: rotateY(0deg);
+    }
+    .main4 .pc-mbs .pc-mbs-photo .or .name{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 25px;
+        line-height: 30px;
+        font-weight: 500;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgba(0,0,0, 0.3);
+    }
+    .ov li{
+        height: 33.33%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .ov li .icon{
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+    }
+    .ov li .text{
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .ov li .text span{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 18px;
+    }
+    .ov ul{
+        text-align: center;
+    }
+    .ov ul a{
+        font-size: 16px;
+        color: #121212;
+        font-weight: 500;
+        padding: 10px 80px;
+        border: 2px solid #ccc;
+        transition: background 1s;
+    }
+    .ov ul a:hover{
+        background-color: #fff;
+        color: #ed1c24;
+        border-color: #fff;
+    }
+    .main5{
+        padding-right: 120px;
+        padding-bottom: 0;
+        padding-top: 90px;
+        overflow-y: hidden;
+    }
+    .main5 .pc-bannerlist{
+        margin-top: 0;
+        height: 100%;
+    }
+    .main5 .pc-bannerlist h2{
+        margin-top: 10px;
+        font-size: 35px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .main5 .pc-bannerlist ul{
+        display: flex;
+        justify-content: space-around;
+        padding: 0 11%;
+    }
+    .main5 .pc-bannerlist li{
+        width: 25%;
+        margin-bottom: 0;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: opacity;
+    }
+    .main5 .pc-bannerlist li:nth-child(1){
+        transition: opacity 2s, transform 2s;
+        transition-delay: 0.5s;
+    }
+    .main5 .pc-bannerlist li:nth-child(2){
+        transition: opacity 3s, transform 3s;
+        transition-delay: 1s;
+    }
+    .main5 .pc-bannerlist li:nth-child(3){
+        transition: opacity 4s, transform 4s;
+        transition-delay: 1.5s;
+    }
+    .main5 .pc-bannerlist li a{
+        display: block;
+    }
+    .main5 .pc-bannerlist li a img{
+        max-width: 100%;
+        max-height: none;
+    }
+    .main5 .pc-bannerlist .more{
+        opacity: 0;
+        transform: translateY(100px);
+        transition: opacity 5s, transform 4s;
+        transition-delay: 2s;
+    }
+    .main5 .more a{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .main5.on .pc-bannerlist li{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .main5.on .more{
+        opacity: 1;
+        transform: translateY(50px);
+    }
+    /* 달력란 */
+    .inner{
+        position: static;
+    }
+    .datein{
+        position: static;
+        width: 1100px;
+        height: 90%;
+        margin: 3% auto;
+        transform: translateY(0);
+    }
+    .layer-title{
+        height: 50px;
+        line-height: 50px;
+    }
+    .layer-title .close{
+        position: absolute;
+        top : 12px;
+        right: 15px;
+    }
+    .layer-title .close a{
+        width: 25px;
+        height: 25px;
+    }
+    .layer{
+        height: 520px;
+    }
+    .left-layer{
+        width: 45%;
+        height: 100%;
+    }
+    .left-layer h2{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .left-layer .calendar{
+        height: 420px;
+    }
+    .left-layer .time{
+        height: 50px;
+    }
+    .left-layer .time select{
+        padding: 5px 20px;
+        font-size: 18px;
+    }
+    .left-layer .last-check{
+        width: 100%;
+        height: 50px;
+    }
+    .left-layer .last-check .check-date{
+        font-size: 25px;
+        line-height: 50px;
+    }
+    .left-layer .last-check .check-time{
+        font-size: 25px;
+        line-height: 50px;
+    }
+    /**/
+    .lay-arrow{
+        width: 10%;
+        height: 100%;
+    }
+    .right-layer h2{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .right-layer .calendar1{
+        height: 420px;
+    }
+    .right-layer .time{
+        height: 50px;
+    }
+    .right-layer .time select{
+        padding: 5px 20px;
+        font-size: 18px;
+    }
+    .right-layer .last-check{
+        height: 50px;
+    }
+    .right-layer .last-check .check-date{
+        font-size: 25px;
+        line-height: 50px;
+    }
+    .right-layer .last-check .check-time{
+        font-size: 25px;
+        line-height: 50px;
+    }
+    .layer-check{
+        height: 80px;
+        display: flex;
+    }
+    .layer-check .ok{
+        width: 200px;
+        height: 40px;
+    }
+    .layer-check .ok a{
+        width: 200px;
+        height: 40px;
+        font-size: 22px;
+        line-height: 40px;
+    }
+    /*LEFT  calendar*/
+    .scriptCalendar>thead>tr>td{
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+    .scriptCalendar>tbody>tr>td{
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+    
+    /*right calendar*/
+    
+    .scriptCalendar1>thead>tr>td{
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+    .scriptCalendar1>tbody>tr>td{
+        width: 50px;
+        height: 50px;
+        font-size: 16px;    
+    }
+}

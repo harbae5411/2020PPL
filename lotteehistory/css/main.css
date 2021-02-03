@@ -1,0 +1,332 @@
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #121212;
+    background-color: #fff;
+}
+ul, li{ 
+    list-style: none;
+}
+img{
+    vertical-align: top;
+}
+a{
+    text-decoration: none;
+}
+#wrap{
+    width: 100%;
+    position: relative;
+}
+#intro{
+    width: 100%;    
+}
+.intro_in{
+    width: 1400px;
+    margin: 100px auto 0 auto;
+    padding-top: 50px;
+    background-color: #f1f1f1;
+}
+.intro_in h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.intro_in h1 img{
+    width: 200px;
+    height: auto;
+}
+.intro_photo{    
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+.intro_photo .mockup{
+    text-align: center;
+    margin-left: 100px;
+}
+.intro_photo .mockup img{
+    width: 80%;
+    height: auto;
+}
+.guide_info{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+.guide_info h2{
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+.color, .font{
+    width: 50%;
+}
+.color_list{
+    display: flex;
+}
+.color_list p{
+    margin-right: 60px;
+    font-size: 18px;
+    text-align: center;
+}
+.color_list p:before{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.color_list .color1{
+    color: #ed1c24;
+    font-weight: 600;
+}
+.color_list .color2{
+    color: #fff;
+    font-weight: 600;
+}
+.color_list .color1:before{
+    background-color: #ed1c24;
+}
+.color_list .color2:before{
+    background-color: #fff;
+}
+.font_list{
+    margin-bottom: 50px;
+}
+.font_list p{
+    margin-bottom: 30px;
+}
+.font_list .font1{
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+}
+.font_list .font2{
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 500;
+}
+.font_list .font3{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.font_list .font4{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 300;
+}
+.guide_in, .main1_in, .main2_in, .main3_in, .main4_in, .main5_in{
+    width: 1400px;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+}
+.guide_in h1, .main1_in h1, .main2_in h1, .main3_in h1, .main4_in h1, .main5_in h1{
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #333;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+.main1_info, .main2_info, .main3_info, .main4_info, .main5_info{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+.main1_info .photo1{
+    width: 100%;
+    height: 580px;
+    background-image: url(../img/main1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.main2_info .photo2{
+    width: 100%;
+    height: 580px;
+    background-image: url(../img/main2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.main3_info .photo3{
+    width: 100%;
+    height: 580px;
+    background-image: url(../img/main3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.main4_info .photo4{
+    width: 100%;
+    height: 580px;
+    background-image: url(../img/main4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.main5_info .photo5{
+    width: 100%;
+    height: 580px;
+    background-image: url(../img/main5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.main1_info .photo1 img, .main2_info .photo2 img, .main3_info .photo3 img,
+.main4_info .photo4 img, .main5_info .photo5 img{
+    width: 100%;
+    height: auto;
+}
+.main1_info span, .main2_info span, .main3_info span, .main4_info span,
+.main5_info span{
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ed1c24;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    z-index: 1;
+}
+.main1_info .number1{
+    top: -45px;
+    left: -10px;
+}
+.main1_info .number2{
+    top: -45px;
+    right: 20px;
+}
+.main1_info .number3{
+    top: 180px;
+    left: 310px;
+}
+.main1_info .number4{
+    bottom: 80px;
+    left: 64%;
+}
+
+
+.main2_info .number1{
+    top: 40px;
+    left: 85px;
+}
+.main2_info .number2{
+    top: 105px;
+    left: 0px;
+}
+.main2_info .number3{
+    top: 260px;
+    left: 10px;
+}
+.main2_info .number4{
+    top: 30px;
+    left: 40%;
+}
+
+
+.main3_info .number1{
+    top: 70px;
+    left: 150px;
+}
+.main3_info .number2{
+    bottom: 100px;
+    left: 190px;
+}
+
+
+.main4_info .number1{
+    top: 45px;
+    left: 0px;
+}
+.main4_info .number2{
+    top: 45px;
+    left: 250px;
+}
+.main4_info .number3{
+    bottom: 210px;
+    left: 290px;
+}
+
+
+
+.main5_info .number1{
+    top: 30px;
+    left: 100px;
+}
+
+
+.photo1_text, .photo2_text, .photo3_text, .photo4_text, .photo5_text{
+    width: 80%;
+    margin: 50px auto 0 auto;
+    display: flex;
+}
+.photo1_text span:before, .photo2_text span:before, .photo3_text span:before, .photo4_text span:before, .photo5_text span:before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/icon.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 15px 0 10px;    
+}
+.text1, .text2, .text3, .text4{
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: -1px;
+}
+.photo1_text p:before, .photo2_text p:before, .photo3_text p:before, .photo4_text p:before, .photo5_text p:before{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ed1c24;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+.text1:before{
+    content: "1";
+}
+.text2:before{
+    content: "2";
+}
+.text3:before{
+    content: "3";
+}
+.text4:before{
+    content: "4";
+}
+.btn_in{
+    width: 1400px;
+    height: 100px;
+    margin: 0 auto;
+}
+.btn_list{
+    width: 600px;
+    display: flex;
+    margin: 50px auto 0 auto;
+    justify-content: space-between;
+}
+#originalpage a, #demopage a, #gobakchome a{
+    display: block;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    background-color: #ed1c24;
+    color: #fff;
+}
